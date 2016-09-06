@@ -1,0 +1,167 @@
+/*general shit*/
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+body {
+  background-color:#290000!important;
+}
+li {
+	list-style: none;
+	font-size: 15px;
+	font-family: Alef Hebrew;
+	color: #000000;
+	font-weight: bold;
+    padding: 10px;
+}
+li:hover {
+	background-color: #8A0808;
+    color: white;
+     height: 40px;
+}
+
+
+/*header and images*/
+header {
+    height: 500px;
+   background-color: black;
+}
+header>div{
+	background-color: black;
+	height: 500px;
+}
+#logo {
+	height: 240px;
+	width: 130px;
+	background-color: #8A0808;
+    margin:0px auto;
+    padding:10px;
+    border:2px solid black;
+    position: relative;
+    z-index: 10;
+}
+
+.log {
+  height: 220px;
+  width: auto;
+  margin-top: -10px;
+  margin-left: -10px;
+  background-image: yellow;
+}
+div.carousel-inner, .item{
+    background-color: black!important;
+}
+div.carousel-inner{
+    width: 900px;
+    height: 500px;
+}
+div.item{
+    width: 900px;
+    height: auto;
+    -webkit-filter: grayscale(100%); filter: grayscale(100%);
+    opacity: 0.9;
+}
+   
+
+/*main navigation*/
+nav{
+    background-color:#6E6E6E;
+    height: 40px;
+}
+
+/*web body*/
+div#carousel-example-generic {
+	height: 400px;
+	width: 300px;
+    display: inline-block;
+}
+.inv {
+   height: 400px;
+   width:auto;
+   opacity: 0.7;
+   margin-top: 40px;
+   display: inline-block;
+}
+#youtube {
+    width: 50px;
+    height: auto;
+    display: block; 
+    display: inline-block;
+}
+div>h6{
+  display: inline-block;
+}
+.face {
+    height: 80px;
+    width: 200px;
+    margin-left: 250px;
+    margin-top: 40px;
+    display: inline-block;
+}
+.film {
+    height: 150px;
+    width: 200px;
+    margin-left: 250px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.link {
+    height: 80px;
+    width: 200px;
+    background-color: #6E6E6E;
+    margin-left: 250px;
+    margin-top: 30px;
+    border: 1px solid #000000;
+    display: inline-block;
+}
+#facebook {
+    height: 80px;
+    width: 200px;
+}
+.film>a>img{
+  height: 150px;
+  width: 200px;  
+}
+.link>h3 {
+    text-align: center;
+    font-family: Alef Hebrew;
+    color: #000000;
+    margin-top: 4px;
+}
+.box {
+  height: 220px;
+  width: 500px;
+  background-color:#6E6E6E;
+   border: 2px solid #000000;
+  margin-top: 100px;
+  margin-left: 650px;
+}
+div>h4 {
+  text-align: center;
+  font-family: Alef Hebrew;
+}
+p {
+font-style: Alef Hebrew;
+font-size: 20px;
+text-align: center;
+}
+
+.bottom {
+    margin-top: 60px;
+    height: 200px;
+    background-color: #8A0808;
+    border-top: 3px solid #6E6E6E;
+}
+.map {
+  height: 190px;
+  width: auto;
+  position: absolute;
+  left: 750px;
+  margin-top: 3px;
+}
+.sine {
+  margin: 30px;
+  margin-top: 40px;
+  height: 100px;
+  width: auto;
+}
+#dror {
+  height: 50px;
+}

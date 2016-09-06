@@ -1,0 +1,48 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+#content{
+	margin-top:50px;
+	background-color: #cccacc;
+}
+
+
+.carousel{
+	.item{
+		height: 430px;
+	}
+}
+
+.imgcat {
+	height: 200px;
+	float: left;
+	width:auto;
+	margin:10px;
+}

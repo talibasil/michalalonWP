@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<?php $categories = get_categories();
+	<?php $categories = get_categories();fdsfdsf
  		
 
  		if ( ! empty( $categories ) ) {

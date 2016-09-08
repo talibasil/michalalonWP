@@ -570,6 +570,16 @@ header nav .menu li a .icon-2x {
   width: auto;
   margin: 10px;
 }
+.imgpopup {
+  height: 70vh;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+.modal-content {
+  height: 90vh;
+  width: auto;
+}
 .comment-content a {
   word-wrap: break-word;
 }

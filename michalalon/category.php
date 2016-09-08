@@ -22,7 +22,22 @@ get_header(); ?>
 				
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<?php if ( has_post_thumbnail() ) : ?>
-					        <img class="imgcat" src="<?php the_post_thumbnail_url(); ?> "/>
+					        <img class="imgcat" data-toggle="modal" data-target="#<?php the_ID();?>" src="<?php the_post_thumbnail_url(); ?> "/>
+
+					        <div class="modal fade" id="<?php the_ID();?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background-color:black;">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <h4 class="modal-title" id="myModalLabel"> <?php the_title();?> </h4>
+							      </div>
+							      <div class="modal-body">
+							      	<?php the_content();?>
+							         <img class="imgpopup" src="<?php the_post_thumbnail_url(); ?> "/>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 					<?php endif; ?>
 				<!-- post -->
 				<?php endwhile; ?>
@@ -34,6 +49,9 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+
+<!-- Modal -->
+
 
 	
 

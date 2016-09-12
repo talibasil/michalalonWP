@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
 body,
 button,
 input,
@@ -7,6 +9,11 @@ textarea {
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	font-family: "Alef Hebrew",
+               // “Helvetica Neue”,
+               Helvetica,
+               Arial,
+               sans-serif;
 }
 
 @import "headings";

@@ -8,20 +8,23 @@
  */
 
 get_header(); ?>
-
-		<?php $categories = get_categories();
-	 		
-		 		if ( ! empty( $categories ) ) {
-					foreach($categories as $category) { 
-								if (function_exists('z_taxonomy_image_url')){?>
+	<main class="container-fluid">
+		<?php $categories = get_categories();?>
+ 		<div class="accordion">
+	 		<?php if ( ! empty( $categories ) ) {
+				foreach($categories as $category) { 
+					if (function_exists('z_taxonomy_image_url')){?>
+						<div class="item">
 							<a href="<?php echo get_category_link($category->term_id); ?>">
 								<img src="<?php echo z_taxonomy_image_url($category->term_id); ?>" />
+				    			<p><?php echo esc_html( $category->name );?></p>
 							</a>
-						<?php }
-				    	echo esc_html( $category->name );   
-					}
-				}?>
-	  </div>
+						</div>
+					<?php }
+				}
+			}?>
+  		</div>
+	</main>
 
 
  

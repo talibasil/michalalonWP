@@ -50,6 +50,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -87,7 +88,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-/* header */
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -238,6 +238,7 @@ body, button, input, select, textarea {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: "Alef Hebrew", Helvetica, Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
   clear: both;
@@ -474,7 +475,7 @@ header nav .menu li a {
 }
 header nav .menu li a .icon-2x {
   font-size: 20px;
-  float: right !important;
+  margin-left: 500px;
 }
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -576,6 +577,21 @@ header nav .menu li a .icon-2x {
   margin: auto;
   display: block;
 }
+.accordion {
+  width: 100%;
+}
+.accordion div {
+  display: block;
+  float: left;
+}
+.accordion div img {
+  width: 100%;
+}
+.accordion p {
+  position: absolute;
+  left: 0;
+  z-index: 999;
+}
 .modal-content {
   height: 90vh;
   width: auto;
@@ -585,6 +601,12 @@ header nav .menu li a .icon-2x {
 }
 .bypostauthor {
   display: block;
+}
+.rtl {
+  /* header */
+}
+.rtl header.head h1 {
+  text-align: left;
 }
 header.head {
   background-color: #cccacc;
@@ -597,7 +619,10 @@ header.head img {
   margin-top: 20px;
 }
 header.head .logo {
-  margin-top: 40px;
+  margin-top: 30px;
+}
+header.head .logo h1 {
+  font-size: 35px;
 }
 .infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
   display: none;

@@ -110,7 +110,7 @@ function michalalon_scripts() {
 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.min.css');
 
-	// wp_enqueue_style( 'bootstraprtl', get_template_directory_uri() . '/inc/css/bootstrap-rtl.css');
+	wp_enqueue_script( 'acordion', get_template_directory_uri() . '/js/shadeaccordion.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/js/bootstrap.min.js', array('jquery'), '20151215', true );
 

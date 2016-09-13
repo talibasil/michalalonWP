@@ -105,7 +105,9 @@
 		width: 50%;
 	}
 }
-
+// header.head .row{
+// 	margin-bottom: 15px;
+// }
 header nav{
 	background:white;
 	clear:both;
@@ -113,7 +115,7 @@ header nav{
 	img{border-radius:0;}
 	.menu {
 		// float: left;
-		margin-top: 20px;
+		margin-top: 15px;
 		li {
 			list-style-type: none;
 		    margin: 0;
@@ -123,12 +125,17 @@ header nav{
 			&:nth-child(1){
 				margin-left: 50px;
 			}
+			&:nth-child(5){
+					float: right;
+				}
+			&:nth-child(6){
+					float: right;
+				}
 			a{
 				font-size: 20px;
 				color: black;
 				.icon-2x {
 					font-size: 20px;
-					margin-left: 500px;
 				}
 			}
 		}

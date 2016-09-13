@@ -11,17 +11,27 @@ get_header(); ?>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+  <!-- <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
+  </ol> -->
 		 <div class="carousel-inner" role="listbox">
 <?php $query_args = array(
 	'post_type'              => 'slider',
 );
 $query = new WP_Query( $query_args ); ?>
+
+<ol class="carousel-indicators">
+      <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
+<?php endwhile; ?>
+</ol>
+<!-- post navigation -->
+<?php else: ?>
+<!-- no posts found -->
+<?php endif; ?>
 
 <?php $first = true;?>
 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>

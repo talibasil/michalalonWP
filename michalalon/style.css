@@ -457,7 +457,7 @@ header nav img {
   border-radius: 0;
 }
 header nav .menu {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 header nav .menu li {
   list-style-type: none;
@@ -469,13 +469,18 @@ header nav .menu li {
 header nav .menu li:nth-child(1) {
   margin-left: 50px;
 }
+header nav .menu li:nth-child(5) {
+  float: right;
+}
+header nav .menu li:nth-child(6) {
+  float: right;
+}
 header nav .menu li a {
   font-size: 20px;
   color: black;
 }
 header nav .menu li a .icon-2x {
   font-size: 20px;
-  margin-left: 500px;
 }
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -595,6 +600,16 @@ header nav .menu li a .icon-2x {
 .modal-content {
   height: 90vh;
   width: auto;
+}
+#primary #main h4 {
+  padding-top: 50px;
+  padding-left: 120px;
+  padding-right: 80px;
+}
+#primary #main p {
+  font-size: 15px;
+  padding-left: 120px;
+  padding-right: 80px;
 }
 .comment-content a {
   word-wrap: break-word;

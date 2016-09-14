@@ -30,7 +30,6 @@
 
 
 #content{
-	margin-top:50px;
 	background-color: #cccacc;
 }
 
@@ -57,31 +56,38 @@
 
 .accordion{
 	width:100%;
+	background-color:black;
 	div{
 		display: block;
 		float:left;
+		position: relative;
 		img{
 			width:100%;
-
 		}
 	}
 	p{
 		position: absolute;
-		left:0;
+		left:20px;
+		top:50%;
 		z-index:999;
+		color: white;
+		font-weight:bolder;
+		font-size:30px;
 	}
 }
 .modal-content{
 	height: 90vh;
     width: auto;
 }
-#primary #main h4{
+#primary #main {
+	h4{
 	padding-top: 50px;
 	padding-left: 120px;
 	padding-right: 80px;
-}
-#primary #main p{
-	font-size: 15px;
-	padding-left: 120px;
-	padding-right: 80px;
+	}
+	p{
+		font-size: 15px;
+		padding-left: 120px;
+		padding-right: 80px;
+	}
 }

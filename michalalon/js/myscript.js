@@ -1,11 +1,14 @@
 jQuery(function ($) {
 
-	if ($('.products').length) { //if we have slider
+	if ($('.accordion').length) { //if we have slider
+
+		var heightforestscreen = $(window).height() - $('header').height() - $('footer').height();
+
 		var counter = 0,
-			end = $('.products').find('img').length;
-		$('.products').find('img').load(function() { //fires after all images loads
+			end = $('.accordion').find('img').length;
+		$('.accordion').find('img').load(function() { //fires after all images loads
 		    counter += 1;
-		    counter === end && $('.products').height(450).shadeAccordion('li', 450);
+		    counter === end && $('.accordion').height(heightforestscreen).shadeAccordion('.item', heightforestscreen);
 		}).each(function() {
 		  this.complete && $(this).load();        
 		});		

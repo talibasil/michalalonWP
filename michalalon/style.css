@@ -475,7 +475,13 @@ header nav .menu li a {
 }
 header nav .menu li a .icon-2x {
   font-size: 20px;
+<<<<<<< HEAD
+<<<<<<< HEAD
   margin-left: 500px;
+=======
+>>>>>>> parent of 72322e3... home page slider- photo size auto
+=======
+>>>>>>> parent of 72322e3... home page slider- photo size auto
 }
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -591,10 +597,107 @@ header nav .menu li a .icon-2x {
   position: absolute;
   left: 0;
   z-index: 999;
+<<<<<<< HEAD
+=======
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+>>>>>>> parent of 72322e3... home page slider- photo size auto
 }
 .modal-content {
   height: 90vh;
   width: auto;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> parent of 72322e3... home page slider- photo size auto
+}
+#primary #main h4 {
+  padding-top: 50px;
+  padding-left: 120px;
+  padding-right: 80px;
+}
+#primary #main p {
+  font-size: 15px;
+  padding-left: 120px;
+  padding-right: 80px;
+}
+.sticky {
+  display: block;
+}
+.hentry {
+  margin: 0 0 1.5em;
+}
+.byline, .updated:not(.published) {
+  display: none;
+}
+.single .byline, .group-blog .byline {
+  display: inline;
+}
+.page-content, .entry-content, .entry-summary {
+  margin: 1.5em 0 0;
+}
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+#content {
+  background-color: #cccacc;
+}
+.carousel .item {
+  height: 430px;
+}
+.imgcat {
+  height: 200px;
+  float: left;
+  width: auto;
+  margin: 10px;
+}
+.imgpopup {
+  height: 70vh;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+.accordion {
+  width: 100%;
+  background-color: black;
+}
+.accordion div {
+  display: block;
+  float: left;
+  position: relative;
+}
+.accordion div img {
+  width: 100%;
+}
+.accordion p {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  z-index: 999;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.modal-content {
+  height: 90vh;
+  width: auto;
+}
+#primary #main h4 {
+  padding-top: 50px;
+  padding-left: 120px;
+  padding-right: 80px;
+}
+#primary #main p {
+  font-size: 15px;
+  padding-left: 120px;
+  padding-right: 80px;
+<<<<<<< HEAD
+>>>>>>> parent of 72322e3... home page slider- photo size auto
+=======
+>>>>>>> parent of 72322e3... home page slider- photo size auto
 }
 .comment-content a {
   word-wrap: break-word;

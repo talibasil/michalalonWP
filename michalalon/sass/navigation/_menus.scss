@@ -108,36 +108,45 @@
 
 header nav{
 	background:white;
-	clear:both;
-	position: static;
 	img{border-radius:0;}
 	.menu {
-<<<<<<< HEAD
-		// float: left;
-		margin-top: 20px;
-=======
 		padding-top:10px;
 		ul{padding-left:0;padding-right:0;margin-right:0;margin-left:0;}
-<<<<<<< HEAD
->>>>>>> parent of 72322e3... home page slider- photo size auto
-=======
->>>>>>> parent of 72322e3... home page slider- photo size auto
 		li {
 			list-style-type: none;
 		    margin: 0;
-		    margin-left: 30px;
-		    padding: 0;
-		    display: inline;
+		    padding-right: 30px;
+		    display: inline-block;
 			&:nth-child(1){
-				margin-left: 50px;
+		    	padding-left: 0px;
 			}
+			&:nth-child(5){
+					float: right;
+				}
+			&:nth-child(6){
+					float: right;
+				}
 			a{
 				font-size: 20px;
 				color: black;
 				.icon-2x {
 					font-size: 20px;
-					margin-left: 500px;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 37.5em) {
+	header nav .menu{
+		padding:0;
+		margin:0;
+		li{
+			padding-right: 10px;
+			&:nth-child(6){
+				float: none;
+				display: block;
+				text-align: right;
 			}
 		}
 	}

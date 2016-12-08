@@ -1,4 +1,3 @@
-
 .sticky {
 	display: block;
 }
@@ -30,14 +29,13 @@
 
 
 #content{
-	margin-top:50px;
 	background-color: #cccacc;
 }
 
 
 .carousel{
 	.item{
-		height: 430px;
+		height: 75vh;
 	}
 }
 
@@ -46,19 +44,16 @@
 	float: left;
 	width:auto;
 	margin:10px;
+	cursor:pointer;
 }
 
 .imgpopup{
-    height: 70vh;
+    height: auto;
     width: auto;
     margin: auto;
     display: block;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 .accordion{
 	width:100%;
 	background-color:black;
@@ -80,218 +75,40 @@
 		font-size:30px;
 	}
 }
+
 .modal-content{
 	height: 90vh;
     width: auto;
+	background:transparent;
 }
 #primary #main {
 	h4{
 	padding-top: 50px;
-	padding-left: 120px;
-	padding-right: 80px;
 	}
 	p{
 		font-size: 15px;
-		padding-left: 120px;
-		padding-right: 80px;
 	}
-}.sticky {
-	display: block;
 }
-
-.hentry {
-	margin: 0 0 1.5em;
-}
-
-.byline,
-.updated:not(.published){
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-
-#content{
-	background-color: #cccacc;
-}
-
-
-.carousel{
-	.item{
-		height: 430px;
+.modal-header{
+	border:0;
+	text-align:center;
+	color:white;
+	.close{
+		font-size: 35px;
+		color:white;
+		opacity: 1;
+		padding:5px 10px;
+		box-shadow:none;
 	}
 }
 
-.imgcat {
-	height: 200px;
-	float: left;
-	width:auto;
-	margin:10px;
-}
 
-.imgpopup{
-    height: 70vh;
-    width: auto;
-    margin: auto;
-    display: block;
-}
-
->>>>>>> parent of 72322e3... home page slider- photo size auto
-.accordion{
-	width:100%;
-	background-color:black;
-	div{
-		display: block;
-		float:left;
-		position: relative;
-		img{
-			width:100%;
-		}
+@media screen and (max-width: 37.5em) {
+	.imgcat {
+		height: auto;
+		float: none;
+		width:auto;
+		margin: 10px auto;
 	}
-	p{
-		position: absolute;
-		left:20px;
-		top:50%;
-		z-index:999;
-		color: white;
-		font-weight:bolder;
-		font-size:30px;
-	}
-}
-.modal-content{
-	height: 90vh;
-    width: auto;
-<<<<<<< HEAD
-}
-#primary #main {
-	h4{
-	padding-top: 50px;
-	padding-left: 120px;
-	padding-right: 80px;
-	}
-	p{
-		font-size: 15px;
-		padding-left: 120px;
-		padding-right: 80px;
-	}
-}.sticky {
-	display: block;
-}
 
-.hentry {
-	margin: 0 0 1.5em;
 }
-
-.byline,
-.updated:not(.published){
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-
-#content{
-	background-color: #cccacc;
-}
-
-
-.carousel{
-	.item{
-		height: 430px;
-	}
-}
-
-.imgcat {
-	height: 200px;
-	float: left;
-	width:auto;
-	margin:10px;
-}
-
-.imgpopup{
-    height: 70vh;
-    width: auto;
-    margin: auto;
-    display: block;
-}
-
->>>>>>> parent of 72322e3... home page slider- photo size auto
-.accordion{
-	width:100%;
-	div{
-		display: block;
-		float:left;
-		img{
-			width:100%;
-
-		}
-	}
-	p{
-		position: absolute;
-		left:0;
-		z-index:999;
-<<<<<<< HEAD
-	}
-}
-.modal-content{
-	height: 90vh;
-    width: auto;
-}
-=======
-		color: white;
-		font-weight:bolder;
-		font-size:30px;
-	}
-}
-.modal-content{
-	height: 90vh;
-    width: auto;
-}
-=======
-}
->>>>>>> parent of 72322e3... home page slider- photo size auto
-#primary #main {
-	h4{
-	padding-top: 50px;
-	padding-left: 120px;
-	padding-right: 80px;
-	}
-	p{
-		font-size: 15px;
-		padding-left: 120px;
-		padding-right: 80px;
-	}
-<<<<<<< HEAD
-}
->>>>>>> parent of 72322e3... home page slider- photo size auto
-=======
-}
->>>>>>> parent of 72322e3... home page slider- photo size auto

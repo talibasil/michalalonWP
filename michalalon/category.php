@@ -18,14 +18,12 @@ get_header(); ?>
 		
 		<div class="row">
 			<div class="col-md-12">	
-				<div class="grid">
 				
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<?php if ( has_post_thumbnail() ) : ?>
-						        <img class="imgcat" data-toggle="modal" data-target="#<?php the_ID();?>" src="<?php the_post_thumbnail_url(); ?> "/>
-						<?php endif;?>
-					<?php  endwhile;  endif; ?>
-				</div>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php if ( has_post_thumbnail() ) : ?>
+					        <img class="imgcat" data-toggle="modal" data-target="#<?php the_ID();?>" src="<?php the_post_thumbnail_url(); ?> "/>
+					<?php endif;?>
+				<?php  endwhile;  endif; ?>
 
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<?php if ( has_post_thumbnail() ) : ?>

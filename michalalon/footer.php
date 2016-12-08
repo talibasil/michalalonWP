@@ -12,9 +12,11 @@
 ?>
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<img src="<?php echo get_template_directory();?>/inc/divabiglogo.png">
-		
+	<footer id="colophon" class="site-footer conteiner-fluid" role="contentinfo" style="padding-top:10px;">
+		<div class="col-md-12">
+			<p style="display:inline-block">coded and disign with love by:</p>
+			<img src="<?php echo get_template_directory_uri();?>/inc/diva.png" style="display:inline-block; max-height:15px;">
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

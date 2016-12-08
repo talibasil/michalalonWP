@@ -1,12 +1,5 @@
 jQuery(function ($) {
 
-<<<<<<< HEAD
-	$('.accordion').height(450).shadeAccordion('.item', 450);
-	$('.grid').isotope({
-	  layoutMode: 'fitRows',
-	  itemSelector: '.imgcat'
-	});
-=======
 	if ($('.accordion').length) { //if we have slider
 
 		var heightforestscreen = $(window).height() - $('header').height() - $('footer').height();
@@ -31,8 +24,9 @@ jQuery(function ($) {
 		  this.complete && $(this).load();        
 		});		
 	}
-<<<<<<< HEAD
->>>>>>> parent of 72322e3... home page slider- photo size auto
-=======
->>>>>>> parent of 72322e3... home page slider- photo size auto
+
+	if ($('body').hasClass('home')) {
+		var heightforestscreen = $(window).height() - $('header').height();
+		$('.carousel .item').height(heightforestscreen);
+	}
 });

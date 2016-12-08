@@ -450,24 +450,33 @@ a:hover, a:active {
 }
 header nav {
   background: white;
-  clear: both;
-  position: static;
 }
 header nav img {
   border-radius: 0;
 }
 header nav .menu {
-  margin-top: 20px;
+  padding-top: 10px;
+}
+header nav .menu ul {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 header nav .menu li {
   list-style-type: none;
   margin: 0;
-  margin-left: 30px;
-  padding: 0;
-  display: inline;
+  padding-right: 30px;
+  display: inline-block;
 }
 header nav .menu li:nth-child(1) {
-  margin-left: 50px;
+  padding-left: 0px;
+}
+header nav .menu li:nth-child(5) {
+  float: right;
+}
+header nav .menu li:nth-child(6) {
+  float: right;
 }
 header nav .menu li a {
   font-size: 20px;
@@ -475,13 +484,20 @@ header nav .menu li a {
 }
 header nav .menu li a .icon-2x {
   font-size: 20px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  margin-left: 500px;
-=======
->>>>>>> parent of 72322e3... home page slider- photo size auto
-=======
->>>>>>> parent of 72322e3... home page slider- photo size auto
+}
+@media screen and (max-width: 37.5em) {
+  header nav .menu {
+    padding: 0;
+    margin: 0;
+  }
+  header nav .menu li {
+    padding-right: 10px;
+  }
+  header nav .menu li:nth-child(6) {
+    float: none;
+    display: block;
+    text-align: right;
+  }
 }
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -565,97 +581,20 @@ header nav .menu li a .icon-2x {
   margin: 0 0 1.5em;
 }
 #content {
-  margin-top: 50px;
   background-color: #cccacc;
 }
 .carousel .item {
-  height: 430px;
+  height: 75vh;
 }
 .imgcat {
   height: 200px;
   float: left;
   width: auto;
   margin: 10px;
+  cursor: pointer;
 }
 .imgpopup {
-  height: 70vh;
-  width: auto;
-  margin: auto;
-  display: block;
-}
-.accordion {
-  width: 100%;
-}
-.accordion div {
-  display: block;
-  float: left;
-}
-.accordion div img {
-  width: 100%;
-}
-.accordion p {
-  position: absolute;
-  left: 0;
-  z-index: 999;
-<<<<<<< HEAD
-=======
-  color: white;
-  font-weight: bolder;
-  font-size: 30px;
->>>>>>> parent of 72322e3... home page slider- photo size auto
-}
-.modal-content {
-  height: 90vh;
-  width: auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 72322e3... home page slider- photo size auto
-}
-#primary #main h4 {
-  padding-top: 50px;
-  padding-left: 120px;
-  padding-right: 80px;
-}
-#primary #main p {
-  font-size: 15px;
-  padding-left: 120px;
-  padding-right: 80px;
-}
-.sticky {
-  display: block;
-}
-.hentry {
-  margin: 0 0 1.5em;
-}
-.byline, .updated:not(.published) {
-  display: none;
-}
-.single .byline, .group-blog .byline {
-  display: inline;
-}
-.page-content, .entry-content, .entry-summary {
-  margin: 1.5em 0 0;
-}
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em;
-}
-#content {
-  background-color: #cccacc;
-}
-.carousel .item {
-  height: 430px;
-}
-.imgcat {
-  height: 200px;
-  float: left;
-  width: auto;
-  margin: 10px;
-}
-.imgpopup {
-  height: 70vh;
+  height: auto;
   width: auto;
   margin: auto;
   display: block;
@@ -684,20 +623,33 @@ header nav .menu li a .icon-2x {
 .modal-content {
   height: 90vh;
   width: auto;
+  background: transparent;
 }
 #primary #main h4 {
   padding-top: 50px;
-  padding-left: 120px;
-  padding-right: 80px;
 }
 #primary #main p {
   font-size: 15px;
-  padding-left: 120px;
-  padding-right: 80px;
-<<<<<<< HEAD
->>>>>>> parent of 72322e3... home page slider- photo size auto
-=======
->>>>>>> parent of 72322e3... home page slider- photo size auto
+}
+.modal-header {
+  border: 0;
+  text-align: center;
+  color: white;
+}
+.modal-header .close {
+  font-size: 35px;
+  color: white;
+  opacity: 1;
+  padding: 5px 10px;
+  box-shadow: none;
+}
+@media screen and (max-width: 37.5em) {
+  .imgcat {
+    height: auto;
+    float: none;
+    width: auto;
+    margin: 10px auto;
+  }
 }
 .comment-content a {
   word-wrap: break-word;
@@ -713,7 +665,6 @@ header nav .menu li a .icon-2x {
 }
 header.head {
   background-color: #cccacc;
-  height: 130px;
 }
 header.head img {
   border-radius: 100%;

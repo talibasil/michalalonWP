@@ -24,9 +24,12 @@ jQuery(function ($) {
 		  this.complete && $(this).load();        
 		});		
 	}
+<<<<<<< HEAD
 
 	if ($('body').hasClass('home')) {
 		var heightforestscreen = $(window).height() - $('header').height();
 		$('.carousel .item').height(heightforestscreen);
 	}
+=======
+>>>>>>> 0592ca075b116b17b69a2e9651a00c96c1f4b733
 });

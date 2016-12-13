@@ -7,16 +7,21 @@
 /* header */
 header.head{
 	background-color: #cccacc;
-	min-height: 130px;
+	&>.row:first-child{
+		padding : 30px 0 0;
+	}
 	img{
 		/*margin-right: 15px;*/
 		border-radius: 100%;
 		border: none;
 		display: inline-block;
-		margin-top: 20px;
 	}
 	.logo {
-		margin-top: 30px;
+		// margin-top: 30px;
+		a, a:hover, a:visited, a:focus{
+			text-decoration: none;
+			color:#404040!important;
+		}
 		h1 {
 			font-size: 35px;
 		}

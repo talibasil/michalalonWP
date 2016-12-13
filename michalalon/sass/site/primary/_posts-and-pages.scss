@@ -78,17 +78,10 @@
 
 .modal-content{
 	height: 90vh;
-    width: auto;
+  width: auto;
 	background:transparent;
 }
-#primary #main {
-	h4{
-	padding-top: 50px;
-	}
-	p{
-		font-size: 15px;
-	}
-}
+
 .modal-header{
 	border:0;
 	text-align:center;
@@ -101,6 +94,16 @@
 		box-shadow:none;
 	}
 }
+
+#primary #main {
+	h4{
+	padding-top: 50px;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+
 
 
 @media screen and (max-width: 37.5em) {

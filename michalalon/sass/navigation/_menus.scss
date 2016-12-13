@@ -1,14 +1,14 @@
 header nav{
 	background:white;
-	img{border-radius:0;}
-	.menu {
-		padding-top:10px;
-		ul{padding-left:0;padding-right:0;margin-right:0;margin-left:0;}
-		li {
+	img{ border-radius:0; }
+	.navbar-nav {
+		padding:5px 0;
+		margin: 0;
+		li{
 			list-style-type: none;
-		    margin: 0;
-		    padding-right: 30px;
-		    display: inline-block;
+	    margin: 0;
+	    padding-right: 30px;
+	    display: inline-block;
 			&:nth-child(1){
 		    	padding-left: 0px;
 			}
@@ -18,7 +18,8 @@ header nav{
 			&:nth-child(6){
 					float: right;
 				}
-			a{
+			a, a:hover{
+				background:transparent;
 				font-size: 20px;
 				color: black;
 				.icon-2x {
@@ -29,6 +30,17 @@ header nav{
 	}
 }
 
+.rtl header nav .navbar-nav{
+	li{
+		float:right;
+			&:nth-child(5){
+				float: left;
+			}
+			&:nth-child(6){
+				float: left;
+			}
+	}
+}
 @media screen and (max-width: 37.5em) {
 	header nav .menu{
 		padding:0;

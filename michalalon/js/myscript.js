@@ -2,6 +2,12 @@ jQuery(function ($) {
 
 	if ($('.accordion').length) { //if we have slider
 
+		if ($(window).height() > $(window).width()) {
+
+			console.log("msg");
+
+		}
+
 		var heightforestscreen = $(window).height() - $('header').height() - $('footer').height();
 
 		var counter = 0,

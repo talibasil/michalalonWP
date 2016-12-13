@@ -41,12 +41,24 @@ header nav{
 			}
 	}
 }
+
+
 @media screen and (max-width: 37.5em) {
-	header nav .menu{
+	.rtl header nav .navbar-nav{
+		li{
+			padding-right: 0px;
+			padding-left: 10px;
+		}
+	}
+	
+	header nav .navbar-nav{
 		padding:0;
 		margin:0;
 		li{
 			padding-right: 10px;
+			a{
+				padding: 10px 0;
+			}
 			&:nth-child(6){
 				float: none;
 				display: block;

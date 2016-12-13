@@ -23,10 +23,10 @@
 <body <?php body_class(); ?>>
 	<header class="container-fluid head">
 		<div class="row">
-			<div class="col-sm-offset-1 col-sm-4 col-xs-8 logo">
+			<div class="col-md-offset-1 col-md-4 col-sm-6 col-xs-12 logo">
 				<div class="row">
-					<?php the_header_image_tag('class=col-xs-4 col-sm-3');?>
-					<div class="col-sm-8">
+					<?php the_header_image_tag('class=col-xs-3');?>
+					<div class="col-xs-8">
 						<a href="<?php echo home_url(); ?>">
 							<h1> <b> Michal Alon </b> </h1> 
 						</a>
@@ -36,11 +36,11 @@
 		</div>
 		<div class="row">
 			<nav class="col-sm-12">
-				<div class="col-sm-1"></div>
+				<div class="col-md-1 hidden-sm hidden-xs"></div>
 				<?php wp_nav_menu(
 					array(
 						'container' => '',
-						'menu_class' => 'nav navbar-nav col-sm-11'
+						'menu_class' => 'nav navbar-nav col-md-11 col-sm-12'
 					)
 				); ?>
 			</nav>

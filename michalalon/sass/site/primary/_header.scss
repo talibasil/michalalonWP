@@ -17,14 +17,20 @@ header.head{
 		display: inline-block;
 	}
 	.logo {
-		// margin-top: 30px;
 		a, a:hover, a:visited, a:focus{
 			text-decoration: none;
 			color:#404040!important;
 		}
 		h1 {
+			font-family: $font__headline;
 			font-size: 35px;
 		}
 	}
 } 
+
+@media screen and (max-width: 37.5em) {
+	header.head{
+		.logo h1{font-size: 28px;}
+	}
+}
 

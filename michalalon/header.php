@@ -26,7 +26,7 @@
 			<div class="col-md-offset-1 col-md-4 col-sm-6 col-xs-12 logo">
 				<div class="row">
 					<?php the_header_image_tag('class=col-xs-3');?>
-					<div class="col-xs-8">
+					<div class="col-xs-9">
 						<a href="<?php echo home_url(); ?>">
 							<h1> <b> Michal Alon </b> </h1> 
 						</a>

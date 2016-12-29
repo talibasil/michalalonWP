@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@import url('https://fonts.googleapis.com/css?family=David+Libre|Proza+Libre|Rock+Salt');
 
 body,
 button,
@@ -9,8 +9,8 @@ textarea{
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
-	font-family: "Alef Hebrew",
-               "Helvetica Neue",
+	font-family: 'Proza Libre', sans-serif,
+               'David Libre', serif,
                Helvetica,
                Arial,
                sans-serif!important;

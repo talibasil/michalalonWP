@@ -57,13 +57,14 @@ header nav{
 		li{
 			padding-right: 10px;
 			a{
+				font-size: 14px;
 				padding: 10px 0;
 			}
-			&:nth-child(6){
-				float: none;
-				display: block;
-				text-align: right;
-			}
+			// &:nth-child(6){
+			// 	float: none;
+			// 	display: block;
+			// 	text-align: right;
+			// }
 		}
 	}
 }

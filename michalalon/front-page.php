@@ -17,36 +17,30 @@ get_header(); ?>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
   </ol> -->
-		 <div class="carousel-inner" role="listbox">
-<?php $query_args = array(
-	'post_type'              => 'slider',
-);
-$query = new WP_Query( $query_args ); ?>
+  <div class="carousel-inner" role="listbox">
+    <?php $query_args = array(
+    	'post_type'              => 'slider',
+    );
+    $query = new WP_Query( $query_args ); ?>
 
-<ol class="carousel-indicators">
+    <ol class="carousel-indicators">
+      <?php $firstli = true;?>
       <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
-<?php endwhile; ?>
-</ol>
-<!-- post navigation -->
-<?php else: ?>
-<!-- no posts found -->
-<?php endif; ?>
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="<?php if($first){echo 'active';}?>"> </li>
+        <?php if($firstli){$firstli=false;}?>
+        <?php endwhile; endif; ?>
+    </ol>
 
-<?php $first = true;?>
-<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+    <?php $first = true;?>
+    <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-   			 <div class="item <?php if($first){echo 'active';}?> " style="background-image:url( <?php echo the_post_thumbnail_url( 'slider' ); ?>); background-repeat: no-repeat; background-size: cover; background-position: 50%; ">
-    		</div>
+       			 <div class="item <?php if($first){echo 'active';}?> " style="background-image:url( <?php echo the_post_thumbnail_url( 'slider' ); ?>); background-repeat: no-repeat; background-size: cover; background-position: 50%; ">
+        		</div>
 
-    		<?php if($first){$first=false;}?>
+        		<?php if($first){$first=false;}?>
 
-<?php endwhile; ?>
-<!-- post navigation -->
-<?php else: ?>
-<!-- no posts found -->
-<?php endif; ?>
-    	</div>
+    <?php endwhile; endif; ?>
+  </div>
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">

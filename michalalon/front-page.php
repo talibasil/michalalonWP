@@ -24,10 +24,10 @@ get_header(); ?>
     $query = new WP_Query( $query_args ); ?>
 
     <ol class="carousel-indicators">
-      <?php $firstli = true;?>
+      <?php $counter = 0;?>
       <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="<?php if($first){echo 'active';}?>"> </li>
-        <?php if($firstli){$firstli=false;}?>
+              <li data-target="#carousel-example-generic" data-slide-to="<?php echo $counter;?>" class="<?php if($counter == 0){echo 'active';}?>"> </li>
+        <?php $counter= $counter+1;?>
         <?php endwhile; endif; ?>
     </ol>
 
@@ -52,5 +52,25 @@ get_header(); ?>
     <span class="sr-only">Next</span>
   </a>
 </div>
-<?php
-get_footer('front');
+
+
+<?php $categories = get_categories();?>
+<?php if ( ! empty( $categories ) ) {?>
+<main class="container">
+  <h2 class="text-center"> galleries </h2>
+  <div class="accordion">
+    <?php foreach($categories as $category) { 
+      if (function_exists('z_taxonomy_image_url')){ ?>
+        <div class="item">
+          <a href="<?php echo get_category_link($category->term_id); ?>">
+            <img src="<?php echo z_taxonomy_image_url($category->term_id); ?>" />
+              <p><?php echo esc_html( $category->name );?></p>
+          </a>
+        </div>
+      <?php }
+      }?>
+    </div>
+</main>
+  <?php }
+  
+get_footer();

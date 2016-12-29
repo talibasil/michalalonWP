@@ -22,13 +22,12 @@ jQuery(function ($) {
 		});
 
 		var imgaesWidth = 0;
-			thumbImg.each(function(index, el) {
-				imgaesWidth += $(el).width();
-			});
-
+		thumbImg.each(function(index, el) {
+			imgaesWidth += $(el).width();
+		});
 
 		var margineach =  SliderWidth /  imgaesWidth ;
-	   	
+			   	
 	   	$.fn.HoverAnimation = function(SliderWidth){
 	   		var	$this = $(this), 						//get the specific hoverd container
 	   			imgWid = $this.data('orginalwidht'), 	//actual image width for this cont
@@ -36,11 +35,11 @@ jQuery(function ($) {
 				thumbImgSibDiv = $this.siblings(elmwrap);
 
 
-			var sibImgaesWidth = 0;
-				thumbImgSibDiv.each(function(index, el) {
-					sibImgaesWidth += $(el).width();
-				});
-			var margineachOpend = sliderWidthAfterOpen / sibImgaesWidth;
+				var sibImgaesWidth = 0;
+					thumbImgSibDiv.each(function(index, el) {
+						sibImgaesWidth += $(el).width();
+					});
+				var margineachOpend = sliderWidthAfterOpen / sibImgaesWidth;
 				
 
 				$this.addClass('active').width(imgWid).find('img').css('opacity', '1');
@@ -56,26 +55,31 @@ jQuery(function ($) {
 	   		var $this = $(this),
 				imgWid = $this.data('editedwidth');
 	       	
-			$this.removeClass('active').width(imgWid);
+				$this.removeClass('active').width(imgWid);
 	       	SlideR.find(elmwrap).not('.active').removeClass('inactive').each(function(){
 	       		$(this).width( $(this).data('editedwidth') );
 	    	}).find('img').css('opacity', '0.4'); //End of Each change Margin
 	    
 	    };//End of mouseleave
 
-	    if (SliderWidth < imgaesWidth) {  // only if all images is bigger than slider width
-			 // adjust new width and declare animation when hover
+    if (margineach < 1) {  // only if all images is bigger than slider width
+		 	// adjust new width and declare animation when hover
 			SlideR.find(elmwrap).each(function(idx,el){
 				var imgW = $(el).find('img').width();
 
 				$(el).width( imgW * margineach).find('img').css('opacity', '0.4'); //change images width so they will super fit to the slider
 				$(el).attr('data-orginalwidht', imgW).attr('data-editedwidth', imgW * margineach).find('img');
 				$(el).css({'margin': 0, 'clear': 'none','padding':0}); //change images width so they will super fit to the slider
-			})
-			.mouseover(function(){$(this).HoverAnimation(SliderWidth)})
-			.mouseleave(function(){$(this).LeaveAnimation(SliderWidth)});
+		})
+		.mouseover(function(){$(this).HoverAnimation(SliderWidth)})
+		.mouseleave(function(){$(this).LeaveAnimation(SliderWidth)});
 			
+		}else{
+
+			SlideR.isotope({layoutMode: 'fitRows', itemSelector: elmwrap});
+
 		}
+
 	}
 
 });

@@ -28,7 +28,7 @@
 					<?php the_header_image_tag('class=col-xs-3');?>
 					<div class="col-xs-9">
 						<a href="<?php echo home_url(); ?>">
-							<h1> <b> Michal Alon </b> </h1> 
+							<h1> <b><?php bloginfo('name');?></b> <span><?php bloginfo('description');?></span></h1> 
 						</a>
 					</div>
 				</div>
@@ -47,4 +47,4 @@
 		</div>
 	</header>
 	
-	<div id="content">
+	<div id="content" >
